@@ -3813,7 +3813,7 @@
             title: "Our Pillows",
             text: `Our pillows have made a name for themselves with regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they make sure you drift off to sleep in no time. Specially designed with advanced technology, our pillows contours perfectly to your body, giving you just the right amount of support for perfect alignment throughout the night. Held on pedestals for its breathability, coolness and durability, these state-of-the-art pillows are the perfect way to end each day.`,
             slides: [ {
-                img: "dist/img/catalog/pillow.01.png",
+                img: "./img/catalog/pillow.01.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
@@ -3993,6 +3993,7 @@
             const swiperWrapper = document.querySelector(".catalog__wrapper");
             swiperWrapper.innerHTML = "";
             data.slides.forEach((slide => {
+                console.log("Image path:", slide.img);
                 const slideDiv = document.createElement("div");
                 slideDiv.classList.add("catalog__slide", "swiper-slide");
                 slideDiv.innerHTML = `\n        <div class="catalog__wrap">\n          <div class="catalog__image">\n            <img class="catalog__im ibg" src="${slide.img}" alt="${slide.title}" />\n          </div>\n          <div class="catalog__footer footer-catalog">\n            <h3 class="footer-catalog__title">${slide.title}</h3>\n            <div class="footer-catalog__inner">\n              <div class="footer-catalog__text"><p>${slide.price}</p></div>\n              <a href="" class="footer-catalog__link">\n                <div class="footer-catalog__icon">\n                  <img src="img/catalog/icons/icon.06.svg" alt="Cart icon" />\n                </div>\n              </a>\n            </div>\n          </div>\n        </div>\n      `;
