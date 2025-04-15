@@ -3813,7 +3813,7 @@
             title: "Our Pillows",
             text: `Our pillows have made a name for themselves with regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they make sure you drift off to sleep in no time. Specially designed with advanced technology, our pillows contours perfectly to your body, giving you just the right amount of support for perfect alignment throughout the night. Held on pedestals for its breathability, coolness and durability, these state-of-the-art pillows are the perfect way to end each day.`,
             slides: [ {
-                img: "img//catalog/pillow.01.png",
+                img: "img/catalog/pillow.01.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
@@ -3879,23 +3879,23 @@
             title: "Our Mattresses",
             text: `Designed for deep sleep, our mattresses use memory foam and breathable materials to cradle your body and keep you cool throughout the night.`,
             slides: [ {
-                img: "img/catalog/mattresses.01.png",
+                img: "img/catalog/mattress.01.png",
                 title: "Memory Foam Mattress",
                 price: "599$"
             }, {
-                img: "img/catalog/mattresses.01.png",
+                img: "img/catalog/mattress.01.png",
                 title: "Memory Foam Mattress",
                 price: "599$"
             }, {
-                img: "img/catalog/mattresses.01.png",
+                img: "img/catalog/mattress.01.png",
                 title: "Memory Foam Mattress",
                 price: "599$"
             }, {
-                img: "img/catalog/mattresses.01.png",
+                img: "img/catalog/mattress.01.png",
                 title: "Memory Foam Mattress",
                 price: "599$"
             }, {
-                img: "img/catalog/mattresses.01.png",
+                img: "img/catalog/mattress.01.png",
                 title: "Memory Foam Mattress",
                 price: "599$"
             } ]
@@ -3904,6 +3904,26 @@
             title: "Our Bedding",
             text: `Premium cotton bedding sets that elevate your sleeping experience with luxurious softness and durability. Make your sleep unparalleled.`,
             slides: [ {
+                img: "img/catalog/bedding.01.png",
+                title: "Luxury Cotton Set",
+                price: "199$"
+            }, {
+                img: "img/catalog/bedding.01.png",
+                title: "Luxury Cotton Set",
+                price: "199$"
+            }, {
+                img: "img/catalog/bedding.01.png",
+                title: "Luxury Cotton Set",
+                price: "199$"
+            }, {
+                img: "img/catalog/bedding.01.png",
+                title: "Luxury Cotton Set",
+                price: "199$"
+            }, {
+                img: "img/catalog/bedding.01.png",
+                title: "Luxury Cotton Set",
+                price: "199$"
+            }, {
                 img: "img/catalog/bedding.01.png",
                 title: "Luxury Cotton Set",
                 price: "199$"
