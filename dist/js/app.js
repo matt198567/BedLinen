@@ -3817,27 +3817,27 @@
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "img/catalog/pillow.02.png",
+                img: "img/catalog/pillow.02.webp",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "../../img/catalog/pillow.03.png",
+                img: "img/catalog/pillow.03.webp",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "../../img/catalog/pillow.04.png",
+                img: "img/catalog/pillow.04.webp",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "../../img/catalog/pillow.05.png",
+                img: "img/catalog/pillow.05.webp",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "../../img/catalog/pillow.06.png",
+                img: "img/catalog/pillow.06.webp",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "../../img/catalog/pillow.07.png",
+                img: "img/catalog/pillow.07.webp",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             } ]
@@ -3846,31 +3846,31 @@
             title: "Our Masks",
             text: `Our masks are made from hypoallergenic silk and tailored for optimal comfort. Perfect for travel or nighttime relaxation, they block out light effectively while being gentle on skin.`,
             slides: [ {
-                img: "img/catalog/mask.01.png",
+                img: "img/catalog/mask.01.webp",
                 title: "Silk Sleep Mask",
                 price: "49$"
             }, {
-                img: "img/catalog/mask.01.png",
+                img: "img/catalog/mask.01.webp",
                 title: "Classic Sleep Mask",
                 price: "39$"
             }, {
-                img: "img/catalog/mask.01.png",
+                img: "img/catalog/mask.01.webp",
                 title: "Classic Sleep Mask",
                 price: "39$"
             }, {
-                img: "img/catalog/mask.01.png",
+                img: "img/catalog/mask.01.webp",
                 title: "Classic Sleep Mask",
                 price: "39$"
             }, {
-                img: "img/catalog/mask.01.png",
+                img: "img/catalog/mask.01.webp",
                 title: "Classic Sleep Mask",
                 price: "39$"
             }, {
-                img: "img/catalog/mask.01.png",
+                img: "img/catalog/mask.01.webp",
                 title: "Classic Sleep Mask",
                 price: "39$"
             }, {
-                img: "img/catalog/mask.01.png",
+                img: "img/catalog/mask.01.webp",
                 title: "Classic Sleep Mask",
                 price: "39$"
             } ]
@@ -3879,23 +3879,23 @@
             title: "Our Mattresses",
             text: `Designed for deep sleep, our mattresses use memory foam and breathable materials to cradle your body and keep you cool throughout the night.`,
             slides: [ {
-                img: "img/catalog/mattress.01.png",
+                img: "img/catalog/mattress.01.webp",
                 title: "Memory Foam Mattress",
                 price: "599$"
             }, {
-                img: "img/catalog/mattress.01.png",
+                img: "img/catalog/mattress.01.webp",
                 title: "Memory Foam Mattress",
                 price: "599$"
             }, {
-                img: "img/catalog/mattress.01.png",
+                img: "img/catalog/mattress.01.webp",
                 title: "Memory Foam Mattress",
                 price: "599$"
             }, {
-                img: "img/catalog/mattress.01.png",
+                img: "img/catalog/mattress.01.webp",
                 title: "Memory Foam Mattress",
                 price: "599$"
             }, {
-                img: "img/catalog/mattress.01.png",
+                img: "img/catalog/mattress.01.webp",
                 title: "Memory Foam Mattress",
                 price: "599$"
             } ]
@@ -3904,27 +3904,27 @@
             title: "Our Bedding",
             text: `Premium cotton bedding sets that elevate your sleeping experience with luxurious softness and durability. Make your sleep unparalleled.`,
             slides: [ {
-                img: "img/catalog/bedding.01.png",
+                img: "img/catalog/bedding.01.webp",
                 title: "Luxury Cotton Set",
                 price: "199$"
             }, {
-                img: "img/catalog/bedding.01.png",
+                img: "img/catalog/bedding.01.webp",
                 title: "Luxury Cotton Set",
                 price: "199$"
             }, {
-                img: "img/catalog/bedding.01.png",
+                img: "img/catalog/bedding.01.webp",
                 title: "Luxury Cotton Set",
                 price: "199$"
             }, {
-                img: "img/catalog/bedding.01.png",
+                img: "img/catalog/bedding.01.webp",
                 title: "Luxury Cotton Set",
                 price: "199$"
             }, {
-                img: "img/catalog/bedding.01.png",
+                img: "img/catalog/bedding.01.webp",
                 title: "Luxury Cotton Set",
                 price: "199$"
             }, {
-                img: "img/catalog/bedding.01.png",
+                img: "img/catalog/bedding.01.webp",
                 title: "Luxury Cotton Set",
                 price: "199$"
             } ]
@@ -3933,7 +3933,7 @@
             title: "Recommended Products",
             text: `Based on your preferences, here are some top-rated products customers love. You are sure to find something you like here.`,
             slides: [ {
-                img: "img/catalog/recommended.01.png",
+                img: "img/catalog/recommended.01.webp",
                 title: "Best Seller Pillow",
                 price: "109$"
             } ]
