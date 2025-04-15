@@ -3813,31 +3813,31 @@
             title: "Our Pillows",
             text: `Our pillows have made a name for themselves with regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they make sure you drift off to sleep in no time. Specially designed with advanced technology, our pillows contours perfectly to your body, giving you just the right amount of support for perfect alignment throughout the night. Held on pedestals for its breathability, coolness and durability, these state-of-the-art pillows are the perfect way to end each day.`,
             slides: [ {
-                img: "../../../img/catalog/pillow.01.png",
+                img: "../../img/catalog/pillow.01.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "img/catalog/pillow.02.png",
+                img: "../../img/catalog/pillow.02.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "img/catalog/pillow.03.png",
+                img: "../../img/catalog/pillow.03.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "img/catalog/pillow.04.png",
+                img: "../../img/catalog/pillow.04.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "img/catalog/pillow.05.png",
+                img: "../../img/catalog/pillow.05.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "img/catalog/pillow.06.png",
+                img: "../../img/catalog/pillow.06.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
-                img: "img/catalog/pillow.07.png",
+                img: "../../img/catalog/pillow.07.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             } ]
