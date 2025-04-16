@@ -167,6 +167,26 @@ body {
   background-color: #f5f7fa;
   transition: all .3s ease 0s
 }
+.now {
+  position: relative;
+  font-size: .91875rem;
+  text-transform: capitalize;
+  will-change: transform;
+  transition: -webkit-transform .8s ease 0s;
+  transition: transform .8s ease 0s;
+  transition: transform .8s ease 0s,-webkit-transform .8s ease 0s
+}
+.now::after {
+  content: "";
+  position: absolute;
+  top: -.9375rem;
+  left: -3.875rem;
+  width: 6.25rem;
+  height: 4.25rem;
+  background: url(../img/hero/icons/icon-button.svg) no-repeat center;
+  background-size: contain;
+  cursor: pointer
+}
 .header {
   background-color: #375b68;
   position: sticky;
@@ -248,26 +268,6 @@ body {
   text-transform: capitalize;
   cursor: default
 }
-.hero__link {
-  position: relative;
-  font-size: .91875rem;
-  text-transform: capitalize;
-  will-change: transform;
-  transition: -webkit-transform .8s ease 0s;
-  transition: transform .8s ease 0s;
-  transition: transform .8s ease 0s,-webkit-transform .8s ease 0s
-}
-.hero__link::after {
-  content: "";
-  position: absolute;
-  top: -.9375rem;
-  left: -3.875rem;
-  width: 6.25rem;
-  height: 4.25rem;
-  background: url(../img/hero/icons/icon-button.svg) no-repeat center;
-  background-size: contain;
-  cursor: pointer
-}
 .hero__image {
   aspect-ratio: 1129/638;
   -webkit-filter: drop-shadow(10px 10px 10px rgba(60, 38, 12, .35));
@@ -338,6 +338,9 @@ body {
 .about__images {
   position: relative;
   z-index: 2
+}
+.about__image {
+  aspect-ratio: 385/340
 }
 .icons-about__item {
   position: absolute
@@ -481,6 +484,35 @@ body {
 .footer-catalog__link {
   transition: scale .8s ease 0s
 }
+.save {
+  background: linear-gradient(to bottom,#1f2e3b 0,#1f2e3b 70%,#6ca8b1 70%,#6ca8b1 100%)
+}
+.save__inner {
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  align-items: self-start;
+  gap: 1.25rem
+}
+.save__wrap {
+  display: grid;
+  grid-template-columns: repeat(2,auto)
+}
+.save__im {
+  aspect-ratio: 620/522
+}
+.save__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 6rem
+}
+.save__text {
+  max-width: 27.5rem;
+  text-transform: capitalize;
+  line-height: 1.75rem
+}
+.save__link {
+  align-self: flex-end
+}
 .swiper {
   overflow: hidden
 }
@@ -584,13 +616,16 @@ body {
     margin-bottom: 1.875rem
   }
   .services {
-    padding-top: 6.25rem
+    padding-top: 3.125rem
   }
   .services {
-    padding-bottom: 6.25rem
+    padding-bottom: 3.125rem
   }
   .about {
-    padding-bottom: 6.25rem
+    padding-top: 3.125rem
+  }
+  .about {
+    padding-bottom: 3.125rem
   }
   .about__block {
     font-size: 1.25rem
@@ -599,7 +634,10 @@ body {
     line-height: 2.5rem
   }
   .catalog {
-    padding-bottom: 6.25rem
+    padding-top: 3.125rem
+  }
+  .catalog {
+    padding-bottom: 3.125rem
   }
   .catalog__title {
     margin-bottom: 4.5rem
@@ -612,6 +650,21 @@ body {
   }
   .footer-catalog__text {
     font-size: .875rem
+  }
+  .save {
+    padding-top: 3.125rem
+  }
+  .save {
+    padding-bottom: 3.125rem
+  }
+  .save__title {
+    font-size: 3rem
+  }
+  .save__text {
+    font-size: 1.5rem
+  }
+  .save__link {
+    margin-left: 6.25rem
   }
 }
 @media (max-width:20em) {
@@ -634,13 +687,16 @@ body {
     margin-bottom: 1.25rem
   }
   .services {
-    padding-top: 2.5rem
+    padding-top: 1.25rem
   }
   .services {
-    padding-bottom: 2.5rem
+    padding-bottom: 1.25rem
   }
   .about {
-    padding-bottom: 2.5rem
+    padding-top: 1.25rem
+  }
+  .about {
+    padding-bottom: 1.25rem
   }
   .about__block {
     font-size: 1rem
@@ -649,7 +705,10 @@ body {
     line-height: 1.5rem
   }
   .catalog {
-    padding-bottom: 2.5rem
+    padding-top: 1.25rem
+  }
+  .catalog {
+    padding-bottom: 1.25rem
   }
   .catalog__title {
     margin-bottom: 1.875rem
@@ -662,6 +721,21 @@ body {
   }
   .footer-catalog__text {
     font-size: .75rem
+  }
+  .save {
+    padding-top: 1.25rem
+  }
+  .save {
+    padding-bottom: 1.25rem
+  }
+  .save__title {
+    font-size: 2rem
+  }
+  .save__text {
+    font-size: 1.25rem
+  }
+  .save__link {
+    margin-left: 2.5rem
   }
 }
 @media (max-width:61.99875em) {
@@ -811,6 +885,10 @@ body {
   .catalog__title::after {
     width: 6.25rem
   }
+  .save__inner {
+    grid-template-columns: auto;
+    justify-content: center
+  }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
@@ -837,13 +915,16 @@ body {
     margin-bottom: clamp(1.25rem ,1.047979798rem + 1.0101010101vw ,1.875rem)
   }
   .services {
-    padding-top: clamp(2.5rem ,1.2878787879rem + 6.0606060606vw ,6.25rem)
+    padding-top: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
   }
   .services {
-    padding-bottom: clamp(2.5rem ,1.2878787879rem + 6.0606060606vw ,6.25rem)
+    padding-bottom: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
   }
   .about {
-    padding-bottom: clamp(2.5rem ,1.2878787879rem + 6.0606060606vw ,6.25rem)
+    padding-top: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
+  }
+  .about {
+    padding-bottom: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
   }
   .about__block {
     font-size: clamp(1rem ,.9191919192rem + .404040404vw ,1.25rem)
@@ -852,7 +933,10 @@ body {
     line-height: clamp(1.5rem ,1.1767676768rem + 1.6161616162vw ,2.5rem)
   }
   .catalog {
-    padding-bottom: clamp(2.5rem ,1.2878787879rem + 6.0606060606vw ,6.25rem)
+    padding-top: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
+  }
+  .catalog {
+    padding-bottom: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
   }
   .catalog__title {
     margin-bottom: clamp(1.875rem ,1.0265151515rem + 4.2424242424vw ,4.5rem)
@@ -866,6 +950,21 @@ body {
   .footer-catalog__text {
     font-size: clamp(.75rem ,.7095959596rem + .202020202vw ,.875rem)
   }
+  .save {
+    padding-top: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
+  }
+  .save {
+    padding-bottom: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
+  }
+  .save__title {
+    font-size: clamp(2rem ,1.6767676768rem + 1.6161616162vw ,3rem)
+  }
+  .save__text {
+    font-size: clamp(1.25rem ,1.1691919192rem + .404040404vw ,1.5rem)
+  }
+  .save__link {
+    margin-left: clamp(2.5rem ,1.2878787879rem + 6.0606060606vw ,6.25rem)
+  }
 }
 @media (any-hover:hover) {
   .more:hover {
@@ -873,6 +972,10 @@ body {
   }
   .more:hover::after {
     background-color: #1bb1e7
+  }
+  .now:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
   }
   .menu__item:hover {
     color: #1bb1e7
@@ -883,10 +986,6 @@ body {
   .additional-menu__link:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3)
-  }
-  .hero__link:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05)
   }
   .sidebar__icon img:hover {
     scale: 1.05
