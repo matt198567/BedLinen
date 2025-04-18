@@ -3813,7 +3813,7 @@
             title: "Our Pillows",
             text: `Our pillows have made a name for themselves with regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they make sure you drift off to sleep in no time. Specially designed with advanced technology, our pillows contours perfectly to your body, giving you just the right amount of support for perfect alignment throughout the night. Held on pedestals for its breathability, coolness and durability, these state-of-the-art pillows are the perfect way to end each day.`,
             slides: [ {
-                img: "img/catalog/pillow-01.webp",
+                img: "../../img/catalog/pillow-01.png",
                 title: "Hotel Quality Pillow",
                 price: "125$"
             }, {
@@ -3941,9 +3941,9 @@
     };
     let swiperInstance;
     function initSliders() {
-        if (document.querySelector(".swiper")) {
+        if (document.querySelector(".catalog__slider")) {
             if (swiperInstance) swiperInstance.destroy(true, true);
-            swiperInstance = new swiper_core_Swiper(".swiper", {
+            swiperInstance = new swiper_core_Swiper(".catalog__slider", {
                 modules: [ Navigation, Pagination ],
                 observer: true,
                 observeParents: true,
@@ -4014,6 +4014,31 @@
     }));
     window.addEventListener("load", (function() {
         renderCatalog("pillows");
+    }));
+    if (document.querySelector(".blog__slider")) new swiper_core_Swiper(".blog__slider", {
+        modules: [ Navigation, Pagination ],
+        observer: true,
+        observeParents: true,
+        slidesPerView: 1,
+        autoHeight: true,
+        speed: 800,
+        effect: "fade",
+        autoplay: {
+            delay: 3e3,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".blog__dotts",
+            clickable: true
+        },
+        navigation: {
+            prevEl: ".documentation__arrow_left",
+            nextEl: ".documentation__arrow_right"
+        },
+        on: {}
+    });
+    window.addEventListener("load", (function(e) {
+        initSliders();
     }));
     let addWindowScrollEvent = false;
     setTimeout((() => {
