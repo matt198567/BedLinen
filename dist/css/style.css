@@ -627,12 +627,10 @@ textarea.input {
 .blog__arrow-right {
   right: 1.25rem
 }
-.subscribe__cotainer {
-  text-align: center
-}
 .subscribe__title {
   text-transform: capitalize;
   font-weight: 700;
+  text-align: center;
   margin-bottom: 1.5625rem
 }
 .subscribe__text {
@@ -641,6 +639,7 @@ textarea.input {
   margin: 0 auto
 }
 .form {
+  position: relative;
   max-width: 48rem;
   margin: 0 auto;
   background: #4f7e8e
@@ -686,6 +685,10 @@ textarea.input {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%)
+}
+.form__button-wrap {
+  display: flex;
+  justify-content: center
 }
 .swiper {
   overflow: hidden
