@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250419162112">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250420162632">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -460,17 +460,17 @@
 							your inbox, so don't worry.
 						</p>
 					</div>
-					<form action="bikovskij97@gmail.com" class="form _form-error">
+					<form data-ajax method="POST" action="files/sendmail/sendmail.php" class="form">
 						<div class="form__inner">
-							<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Enter your email" class="form__input _form-error" />
+							<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Enter your email" class="form__input" />
 							<div class="form__image">
 								<img src="img/subscribe/icons/icon.01.svg" alt="Icon" />
 							</div>
 						</div>
 						<div class="form__button-wrap">
 							<button class="form__button button now">Subscribe now</button>
+							<!-- <div class="form__error">Error</div> -->
 						</div>
-						<div class="form__error">Error</div>
 					</form>
 				</div>
 			</section>
@@ -480,7 +480,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250419162112"></script>
+	<script src="js/app.min.js?_v=20250420162632"></script>
 </body>
 
 </html>

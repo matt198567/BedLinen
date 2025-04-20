@@ -346,9 +346,6 @@ textarea.input {
 .hero {
   background: linear-gradient(to bottom,rgba(0,0,0,.28),transparent 40%),#4f7e8e
 }
-.hero__container {
-  padding-top: 2.5rem
-}
 .hero__inner {
   text-align: center
 }
@@ -639,7 +636,6 @@ textarea.input {
   margin: 0 auto
 }
 .form {
-  position: relative;
   max-width: 48rem;
   margin: 0 auto;
   background: #4f7e8e
@@ -654,7 +650,6 @@ textarea.input {
   width: 100%;
   height: 2.5rem;
   font-weight: 400;
-  font-size: 1.5rem;
   line-height: 1.2;
   letter-spacing: .01em;
   color: #f5f7fa;
@@ -794,6 +789,9 @@ textarea.input {
   .menu__item {
     margin-right: 1.875rem
   }
+  .hero__container {
+    padding-top: 2.5rem
+  }
   .hero__inner {
     margin-bottom: 2.5rem
   }
@@ -884,6 +882,9 @@ textarea.input {
   .subscribe__text {
     margin-bottom: 3.125rem
   }
+  .form__input {
+    font-size: 1.5rem
+  }
   .form__button {
     margin-top: 3.125rem
   }
@@ -900,6 +901,9 @@ textarea.input {
   }
   .menu__item {
     margin-right: .9375rem
+  }
+  .hero__container {
+    padding-top: 1.25rem
   }
   .hero__inner {
     margin-bottom: 1.25rem
@@ -990,6 +994,9 @@ textarea.input {
   }
   .subscribe__text {
     margin-bottom: 1.25rem
+  }
+  .form__input {
+    font-size: 1rem
   }
   .form__button {
     margin-top: 1.25rem
@@ -1167,6 +1174,12 @@ textarea.input {
   .blog__inner {
     flex-direction: column
   }
+  .form__input {
+    padding: 1.375rem 4.875rem
+  }
+  .form__image img {
+    width: 1.5625rem
+  }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
@@ -1185,6 +1198,9 @@ textarea.input {
   }
   .menu__item {
     margin-right: clamp(.9375rem ,.634469697rem + 1.5151515152vw ,1.875rem)
+  }
+  .hero__container {
+    padding-top: clamp(1.25rem ,.845959596rem + 2.0202020202vw ,2.5rem)
   }
   .hero__inner {
     margin-bottom: clamp(1.25rem ,.845959596rem + 2.0202020202vw ,2.5rem)
@@ -1275,6 +1291,9 @@ textarea.input {
   }
   .subscribe__text {
     margin-bottom: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
+  }
+  .form__input {
+    font-size: clamp(1rem ,.8383838384rem + .8080808081vw ,1.5rem)
   }
   .form__button {
     margin-top: clamp(1.25rem ,.6439393939rem + 3.0303030303vw ,3.125rem)
