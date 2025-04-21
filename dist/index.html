@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250421130612">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250421230321">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item active">
-								<a href="" class="menu__link">Home</a>
+								<a data-goto-header data-goto=".hero" href="#" class="menu__link">Home</a>
 								<svg class="menu__con" width="57" height="17" viewBox="0 0 57 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0.989879 6.14369L9.21269 10.6612L4.8878 9.82782C6.884 11.0882 9.66078 12.4256 13.4077 13.8494L22.027 13.6698L17.456 15.2453C19.7095 15.8879 22.3004 16.367 25.0163 16.6094L29.9944 13.5952L27.2474 16.7648C30.0503 16.8829 32.9153 16.7648 35.625 16.3298C38.467 15.8779 41.1413 15.0719 43.3432 13.8059L43.9224 16.7219C45.2387 15.0924 46.0348 13.328 46.4151 11.3592L47.8644 14.0887C48.8501 12.1534 49.0185 10.4325 48.4704 8.35554C51.2751 7.02122 53.7828 5.20339 56.3097 3.41725L55.3589 2.08107C40.8137 13.9737 23.0276 13.0421 10.8354 8.31763L11.4867 6.80867C22.4372 10.985 34.034 11.1466 45.3512 5.9821C44.2325 4.85101 42.9958 3.88771 41.7155 3.12951L37.6262 6.6098L40.2612 2.34644C39.3352 1.91762 38.4154 1.59445 37.5143 1.38936L36.0973 5.37927L36.2216 1.17806C35.3267 1.07862 34.469 1.11591 33.6673 1.29614C28.826 2.35887 23.9163 3.31595 17.571 1.88033L19.4043 5.7273L15.1783 1.2402C14.1093 0.892176 12.9223 0.587651 11.9404 0.438496L14.7805 3.77585L9.04427 0.227193C8.32335 0.227193 7.60865 0.270696 6.92502 0.345274C4.48633 0.633641 2.33974 1.32597 1.22294 2.7908C0.65801 3.51731 0.436139 4.50981 0.723885 5.47746C0.798463 5.71362 0.894792 5.95289 0.989879 6.14369Z" fill="url(#paint0_linear_1_11148)" />
 									<defs>
@@ -36,19 +36,19 @@
 								</svg>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">About</a>
+								<a data-goto-header data-goto=".about" href="#" class="menu__link">About</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Payment</a>
+								<a href="#" class="menu__link">Payment</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Catalog</a>
+								<a data-goto-header data-goto=".catalog" href="#" class="menu__link">Catalog</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Shop</a>
+								<a data-goto-header data-goto=".save" href="#" class="menu__link">Shop</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Blog</a>
+								<a data-goto-header data-goto=".blog" href="#" class="menu__link">Blog</a>
 							</li>
 						</ul>
 					</nav>
@@ -462,7 +462,7 @@
 					</div>
 					<form data-ajax method="POST" action="https://formspree.io/f/xpwdadbg" class="form">
 						<div class="form__inner">
-							<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Enter your email" class="form__input" />
+							<input data-required="email" autocomplete="off" type="email" name="email" data-error="Error" placeholder="Enter your email" class="form__input" />
 							<div class="form__image">
 								<img src="img/subscribe/icons/icon.01.svg" alt="Icon" />
 							</div>
@@ -472,15 +472,103 @@
 							<!-- <div class="form__error">Error</div> -->
 						</div>
 					</form>
+					<div id="overlay" class="overlay">
+						<div class="overlay-content">
+							<h4>Thank you for subscribing!</h4>
+							<p>Your request is being processed.</p>
+							<button id="okButton" class="ok-button">OK</button>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__inner">
+					<div data-spollers="991,max" class="spollers">
+						<details class="spollers__item">
+							<summary class="spollers__title">about</summary>
+							<div class="spollers__body">
+								<a href="" class="spollers__link">our story</a>
+								<a href="" class="spollers__link">our impact</a>
+								<a href="" class="spollers__link">FAQ</a>
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">customer recourses</summary>
+							<div class="spollers__body">
+								<a href="" class="spollers__link">e-catalog</a>
+								<a href="" class="spollers__link">request catalog</a>
+								<a href="" class="spollers__link">support</a>
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">services</summary>
+							<div class="spollers__body">
+								<a href="" class="spollers__link">delivery & shipping</a>
+								<a href="" class="spollers__link">returns</a>
+								<a href="" class="spollers__link">guarantee</a>
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">contacts</summary>
+							<div class="spollers__body">
+								<a target="_blank" href="https://www.google.com.ua/maps/place/12+John+St+%232,+New+York,+NY+10038,+%D0%A1%D0%A8%D0%90/@40.7098518,-74.0116979,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a182c2fcf7d:0xe4b71f7fb77bc934!8m2!3d40.7098478!4d-74.009123?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" class="spollers__link">12 jhon Avenue #2, new York</a>
+								<a href="mailto:sleepy@shop.com" class="spollers__link">sleepy@shop.com</a>
+								<a href="tel:122234" class="spollers__link">+1-222-34-sleep</a>
+							</div>
+						</details>
+					</div>
+					<div class="footer__body">
+						<div class="footer__text">
+							<p>social media:</p>
+						</div>
+						<ul class="footer__social social-footer">
+							<li class="social-footer__item">
+								<a href="" class="social-footer__link">
+									<img src="img/footer/social.01.svg" alt="Icon" />
+								</a>
+							</li>
+							<li class="social-footer__item">
+								<a href="" class="social-footer__link">
+									<img src="img/footer/social.02.svg" alt="Icon" />
+								</a>
+							</li>
+							<li class="social-footer__item">
+								<a href="" class="social-footer__link">
+									<img src="img/footer/social.03.svg" alt="Icon" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__bottom bottom-footer">
+						<div class="bottom-footer__text">
+							<p>
+								Created By Elinaui9 Copyright 2025 sleepy shop . All rights
+								reserved.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-coefficient="100" data-prlx data-direction="1" class="footer__icons icons-footer">
+				<div data-prlx-mouse data-prlx-cx="150" data-prlz-cy="150" data-prlx-dxr data-prlx-dyr class="icons-footer__item icons-footer__item-1">
+					<img src="img/footer/cloud.02.svg" alt="Cloud Icon" />
+				</div>
+				<div data-prlx-mouse data-prlx-cx="150" data-prlz-cy="150" class="icons-footer__item icons-footer__item-2">
+					<img src="img/footer/cloud.01.svg" alt="Cloud Icon" />
+				</div>
+				<div data-prlx-mouse data-prlx-cx="150" data-prlz-cy="150" class="icons-footer__item icons-footer__item-3">
+					<img src="img/footer/cloud.04.svg" alt="Cloud Icon" />
+				</div>
+				<div data-prlx-mouse data-prlx-dxr data-prlx-dyr data-prlx-cx="150" data-prlz-cy="150" class="icons-footer__item icons-footer__item-4">
+					<img src="img/footer/cloud.01.svg" alt="Cloud Icon" />
+				</div>
 			</div>
 		</footer>
+
 	</div>
-	<script src="js/app.min.js?_v=20250421130612"></script>
+	<script src="js/app.min.js?_v=20250421230321"></script>
 </body>
 
 </html>
