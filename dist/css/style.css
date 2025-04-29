@@ -173,7 +173,7 @@ textarea.input {
 }
 body::after {
   content: "";
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.4);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -193,7 +193,7 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 30px 10px;
+  padding: 60px 20px;
   transition: visibility .8s ease 0s;
   visibility: hidden;
   pointer-events: none
@@ -218,8 +218,7 @@ body::after {
   width: 100%;
   display: flex;
   justify-content: start;
-  align-items: flex-end;
-  margin-top: 1.875rem
+  align-items: flex-end
 }
 .popup__content {
   display: flex;
@@ -230,8 +229,8 @@ body::after {
   transition: -webkit-transform .3s ease 0s;
   transition: transform .3s ease 0s;
   transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
-  background-color: #eee;
-  padding: 20px;
+  background-color: #5e97ab;
+  padding: 15px;
   width: 100%;
   max-width: 100px;
   border-radius: 20px
@@ -240,7 +239,10 @@ body::after {
   visibility: visible
 }
 .popup__images {
-  max-width: 5rem
+  max-width: 5rem;
+  transition: -webkit-transform .8s ease 0s;
+  transition: transform .8s ease 0s;
+  transition: transform .8s ease 0s,-webkit-transform .8s ease 0s
 }
 .ibg {
   width: 100%;
@@ -584,6 +586,9 @@ body::after {
 .icons-footer__item-4 {
   top: 64.6153846154%;
   right: 1.0416666667%
+}
+.page {
+  transition: all .8s ease 0s
 }
 .hero {
   background: linear-gradient(to bottom,rgba(0,0,0,.28),transparent 40%),#4f7e8e
@@ -1257,7 +1262,10 @@ body::after {
     font-size: 3rem
   }
   .save__title {
-    line-height: 6rem
+    line-height: 3rem
+  }
+  .save__title {
+    margin-bottom: 1.875rem
   }
   .save__text {
     font-size: 1.5rem
@@ -1399,7 +1407,10 @@ body::after {
     font-size: 1.5rem
   }
   .save__title {
-    line-height: 3rem
+    line-height: 2rem
+  }
+  .save__title {
+    margin-bottom: .625rem
   }
   .save__text {
     font-size: 1.125rem
@@ -1739,7 +1750,10 @@ body::after {
     font-size: clamp(1.5rem ,1.0151515152rem + 2.4242424242vw ,3rem)
   }
   .save__title {
-    line-height: clamp(3rem ,2.0303030303rem + 4.8484848485vw ,6rem)
+    line-height: clamp(2rem ,1.6767676768rem + 1.6161616162vw ,3rem)
+  }
+  .save__title {
+    margin-bottom: clamp(.625rem ,.220959596rem + 2.0202020202vw ,1.875rem)
   }
   .save__text {
     font-size: clamp(1.125rem ,1.0037878788rem + .6060606061vw ,1.5rem)
@@ -1801,6 +1815,10 @@ body::after {
   }
 }
 @media (any-hover:hover) {
+  .popup__images:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+  }
   .more:hover {
     color: #1bb1e7
   }

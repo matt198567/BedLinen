@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250425202429">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250429194247">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +22,22 @@
 						<div class="menu__inner">
 							<ul class="menu__list">
 								<li data-goto-header data-goto=".hero" class="menu__item active">
-									<a href="#" class="menu__link">Home</a>
+									<a href="#" data-i18n="menu.home" class="menu__link">Home</a>
 								</li>
 								<li data-goto-top="50" data-goto-header data-goto=".about" class="menu__item">
-									<a href="#" class="menu__link">About</a>
+									<a href="#" data-i18n="menu.about" class="menu__link">About</a>
 								</li>
 								<li data-goto-header data-goto=".catalog" class="menu__item">
-									<a href="#" class="menu__link">Catalog</a>
+									<a href="#" data-i18n="menu.catalog" class="menu__link">Catalog</a>
 								</li>
 								<li data-goto-top="50" data-goto-header data-goto=".save" class="menu__item">
-									<a href="#" class="menu__link">Shop</a>
+									<a href="#" data-i18n="menu.shop" class="menu__link">Shop</a>
 								</li>
 								<li data-goto-header data-goto=".blog" class="menu__item">
-									<a href="#" class="menu__link">Blog</a>
+									<a href="#" data-i18n="menu.blog" class="menu__link">Blog</a>
 								</li>
 								<li data-goto-header data-goto=".subscribe" class="menu__item">
-									<a href="#" class="menu__link">Subscribe</a>
+									<a href="#" data-i18n="menu.subscribe" class="menu__link">Subscribe</a>
 								</li>
 							</ul>
 							<svg class="menu__con" width="57" height="17" viewBox="0 0 57 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,12 +72,12 @@
 							<div id="popup" aria-hidden="true" class="popup">
 								<div class="popup__wrapper">
 									<div class="popup__content">
-										<button data-lang="en">
+										<button class="popup__choice" data-close data-lang="en">
 											<div class="popup__images">
 												<img class="popup__image ibg" src="img/header/flagEN.webp" alt="Flag United Kingdom" />
 											</div>
 										</button>
-										<button data-lang="uk">
+										<button class="popup__choice" data-close data-lang="uk">
 											<div class="popup__images">
 												<img class="popup__image ibg" src="img/header/FlagUkraine.webp" alt="Flag Ukraine" />
 											</div>
@@ -113,11 +113,13 @@
 			<section class="page__hero hero">
 				<div class="hero__container">
 					<div class="hero__inner">
-						<h1 class="hero__title">Dream in comfort</h1>
-						<div class="hero__text text">
+						<h1 data-i18n="hero.title" class="hero__title">
+							Dream in comfort
+						</h1>
+						<div data-i18n="hero.text" class="hero__text text">
 							<p>Creating your perfect sleep sanctuary with us</p>
 						</div>
-						<a href="" class="hero__link now">shop now</a>
+						<a href="#" data-i18n="hero.link" class="hero__link now">shop now</a>
 					</div>
 					<img class="hero__image ibg" src="img/hero/image-bg.webp" alt="Image" />
 					<div data-coefficient="100" data-prlx data-direction="1" class="main-hero__icons icons-main-hero">
@@ -164,7 +166,7 @@
 							<div class="services__image">
 								<img src="img/services/icon.01.svg" alt="Icon" />
 							</div>
-							<div class="services__text">
+							<div data-i18n="services.text.1" class="services__text">
 								<p>healthy sleep</p>
 							</div>
 						</li>
@@ -172,7 +174,7 @@
 							<div class="services__image">
 								<img src="img/services/icon.02.svg" alt="Icon" />
 							</div>
-							<div class="services__text">
+							<div data-i18n="services.text.2" class="services__text">
 								<p>100%cotton</p>
 							</div>
 						</li>
@@ -180,7 +182,7 @@
 							<div class="services__image">
 								<img src="img/services/icon.03.svg" alt="Icon" />
 							</div>
-							<div class="services__text">
+							<div data-i18n="services.text.3" class="services__text">
 								<p>best tailoring</p>
 							</div>
 						</li>
@@ -188,7 +190,7 @@
 							<div class="services__image">
 								<img src="img/services/icon.04.svg" alt="Icon" />
 							</div>
-							<div class="services__text">
+							<div data-i18n="services.text.4" class="services__text">
 								<p>Comfort</p>
 							</div>
 						</li>
@@ -198,9 +200,11 @@
 			<section data-watch class="page__about about">
 				<div class="about__container">
 					<div class="about__body">
-						<h2 class="about__title title">About sleepy shop</h2>
+						<h2 data-i18n="about.title" class="about__title title">
+							About sleepy shop
+						</h2>
 						<div data-showmore class="about__block">
-							<div data-showmore-content class="about__text">
+							<div data-i18n="about.text" data-showmore-content class="about__text">
 								<p>
 									Sleepy is the perfect bedding store for anyone looking to
 									give their bedroom a makeover. With a wide selection of
@@ -212,7 +216,7 @@
 									and durability.
 								</p>
 							</div>
-							<button hidden data-showmore-button type="button" class="about__more more">
+							<button hidden data-showmore-button data-i18n="about.more" type="button" class="about__more more">
 								<span>read more</span>
 							</button>
 						</div>
@@ -234,7 +238,9 @@
 			</section>
 			<section class="page__catalog catalog">
 				<div class="catalog__container">
-					<h2 data-watch class="catalog__title title-color">Our Catalogue</h2>
+					<h2 data-i18n="catalog.title" data-watch class="catalog__title title-color">
+						Our Catalogue
+					</h2>
 					<div data-watch class="catalog__inner">
 						<aside class="catalog__sidebar">
 							<button class="sidebar__icon active" data-category="pillows">
@@ -272,7 +278,7 @@
 										day.
 									</p>
 								</div>
-								<button hidden data-showmore-button type="button" class="content-catalog__more more">
+								<button data-i18n="about.more" hidden data-showmore-button type="button" class="content-catalog__more more">
 									<span>read more</span>
 								</button>
 							</div>
@@ -284,7 +290,7 @@
 												<img class="catalog__im ibg" src="img/catalog/pillow-01.webp" alt="Pillow image" />
 											</div>
 											<div class="catalog__footer footer-catalog">
-												<h3 class="footer-catalog__title">
+												<h3 data-i18n="footer.catalog.title" class="footer-catalog__title">
 													Hotel Quality Pillow
 												</h3>
 												<div class="footer-catalog__inner">
@@ -315,8 +321,10 @@
 						</div>
 						<div class="save__wrap">
 							<div class="save__content">
-								<h3 class="save__title">save up to 70% Off</h3>
-								<div class="save__text">
+								<h3 data-i18n="save.title" class="save__title">
+									save up to 70% Off
+								</h3>
+								<div data-i18n="save.text" class="save__text">
 									<p>
 										Our pillows are the perfect way to improve your sleep
 										quality, and now there’s even more incentive to upgrade
@@ -326,21 +334,25 @@
 									</p>
 								</div>
 							</div>
-							<a href="" class="save__link now">buy now</a>
+							<a data-i18n="save.link" href="" class="save__link now">buy now</a>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="page__blog blog">
 				<div class="blog__container">
-					<h2 data-watch class="blog__title title-color">Our Blog</h2>
+					<h2 data-i18n="blog.title" data-watch class="blog__title title-color">
+						Our Blog
+					</h2>
 					<div data-watch class="blog__slider swiper">
 						<div class="blog__wrapper swiper-wrapper">
 							<div class="blog__slide swiper-slide">
 								<div class="blog__inner">
 									<div data-showmore class="blog__content">
-										<h3 class="blog__headline">benefits of good pellow</h3>
-										<div data-showmore-content class="blog__text text">
+										<h3 data-i18n="blog.headline" class="blog__headline">
+											benefits of good pillow
+										</h3>
+										<div data-i18n="blog.text" data-showmore-content class="blog__text text">
 											<p>
 												There has long been speculation about the impact that
 												sleeping on a quality pillow and seeing your dreams
@@ -361,7 +373,7 @@
 												sweet dreamland!
 											</p>
 										</div>
-										<button hidden data-showmore-button type="button" class="blog__more more">
+										<button hidden data-showmore-button data-i18n="about.more" type="button" class="blog__more more">
 											<span>read more</span>
 										</button>
 									</div>
@@ -487,10 +499,10 @@
 			</section>
 			<section data-watch class="page__subscribe subscribe">
 				<div class="subscribe__container">
-					<h4 class="subscribe__title title">
+					<h4 data-i18n="subscribe.title" class="subscribe__title title">
 						Subscribe to get the latest news about us
 					</h4>
-					<div class="subscribe__text text">
+					<div data-i18n="subscribe.text" class="subscribe__text text">
 						<p>
 							Sign up for our newsletter & knowing about offers We never spam
 							your inbox, so don't worry.
@@ -504,7 +516,9 @@
 							</div>
 						</div>
 						<div class="form__button-wrap">
-							<button class="form__button button now">Subscribe now</button>
+							<button data-i18n="form.button" class="form__button button now">
+								Subscribe now
+							</button>
 							<!-- <div class="form__error">Error</div> -->
 						</div>
 					</form>
@@ -523,31 +537,39 @@
 				<div class="footer__inner">
 					<div data-spollers="991,max" class="spollers">
 						<details class="spollers__item">
-							<summary class="spollers__title">about</summary>
+							<summary data-i18n="spollers.title" class="spollers__title">
+								about
+							</summary>
 							<div class="spollers__body">
-								<a href="" class="spollers__link">our story</a>
-								<a href="" class="spollers__link">our impact</a>
-								<a href="" class="spollers__link">FAQ</a>
+								<a href="" data-i18n="spollers.link" class="spollers__link">our story</a>
+								<a href="" data-i18n="spollers.link.1" class="spollers__link">our impact</a>
+								<a href="" data-i18n="spollers.link.2" class="spollers__link">FAQ</a>
 							</div>
 						</details>
 						<details class="spollers__item">
-							<summary class="spollers__title">customer recourses</summary>
+							<summary data-i18n="spollers.title.1" class="spollers__title">
+								customer recourses
+							</summary>
 							<div class="spollers__body">
-								<a href="" class="spollers__link">e-catalog</a>
-								<a href="" class="spollers__link">request catalog</a>
-								<a href="" class="spollers__link">support</a>
+								<a href="" data-i18n="spollers.link.3" class="spollers__link">e-catalog</a>
+								<a href="" data-i18n="spollers.link.4" class="spollers__link">request catalog</a>
+								<a href="" data-i18n="spollers.link.5" class="spollers__link">support</a>
 							</div>
 						</details>
 						<details class="spollers__item">
-							<summary class="spollers__title">services</summary>
+							<summary data-i18n="spollers.title.2" class="spollers__title">
+								services
+							</summary>
 							<div class="spollers__body">
-								<a href="" class="spollers__link">delivery & shipping</a>
-								<a href="" class="spollers__link">returns</a>
-								<a href="" class="spollers__link">guarantee</a>
+								<a href="" data-i18n="spollers.link.6" class="spollers__link">delivery & shipping</a>
+								<a href="" data-i18n="spollers.link.7" class="spollers__link">returns</a>
+								<a href="" data-i18n="spollers.link.8" class="spollers__link">guarantee</a>
 							</div>
 						</details>
 						<details class="spollers__item">
-							<summary class="spollers__title">contacts</summary>
+							<summary data-i18n="spollers.title.3" class="spollers__title">
+								contacts
+							</summary>
 							<div class="spollers__body">
 								<a target="_blank" href="https://www.google.com.ua/maps/place/12+John+St+%232,+New+York,+NY+10038,+%D0%A1%D0%A8%D0%90/@40.7098518,-74.0116979,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a182c2fcf7d:0xe4b71f7fb77bc934!8m2!3d40.7098478!4d-74.009123?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" class="spollers__link">12 jhon Avenue #2, new York</a>
 								<a href="mailto:sleepy@shop.com" class="spollers__link">sleepy@shop.com</a>
@@ -604,7 +626,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20250425202429"></script>
+	<script src="js/app.min.js?_v=20250429194247"></script>
 </body>
 
 </html>

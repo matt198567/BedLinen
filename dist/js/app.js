@@ -4435,6 +4435,114 @@
             currentActiveItem?.classList.remove("hover-by-pen");
         }));
     }));
+    const translations = {
+        en: {
+            "menu.home": "Home",
+            "menu.about": "About",
+            "menu.catalog": "Catalog",
+            "menu.shop": "Shop",
+            "menu.blog": "Blog",
+            "menu.subscribe": "Subscribe",
+            "hero.title": "Dream in comfort",
+            "hero.text": "Creating your perfect sleep sanctuary with us",
+            "hero.link": "shop now",
+            "services.text.1": "healthy sleep",
+            "services.text.2": "100% cotton",
+            "services.text.3": "best tailoring",
+            "services.text.4": "Comfort",
+            "about.title": "About sleepy shop",
+            "about.text": "Sleepy is the perfect bedding store for anyone looking togive their bedroom a makeover. With a wide selection oflinens including sheets, duvet covers, quilts and pillow cases, they have something to suit every taste. They offer several color options, patterns and textures so that you can create the perfect ambience in your bedroom. Their quality is second to none, with materials well-chosen for comfort and durability.",
+            "about.more": "read more",
+            "catalog.title": "Our Catalogue",
+            "content.catalog.title": "our pillows",
+            "content.catalog.text": "Our pillows have made a name for themselves with regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they make sure you drift off to sleep in no time. Specially designed with advanced technology, our pillows contours perfectly to your body, giving you just the right amount of support for perfect alignment throughout the night. Held on pedestals for its breathability, coolness and durability, these state-of-the-art pillows are the perfect way to end each day.",
+            "footer.catalog.title": "Hotel Quality Pillow",
+            "save.title": "save up to 70% Off",
+            "save.text": "Our pillows are the perfect way to improve your sleep quality, and now there’s even more incentive to upgrade with our 70% off offer! Get cozy with a premium pillow that is soft, supportive, and durable enough to last for years",
+            "save.link": "buy now",
+            "blog.title": "Our Blog",
+            "blog.headline": "benefits of good pillow",
+            "blog.text": "There has long been speculation about the impact that sleeping on a quality pillow and seeing your dreams have on each other. Some people believe that when you sleep on good pillows, it allows dream energy to flow freely, allowing for clearer and more vivid dreams. Others maintain that a good night's sleep is simply not possible without a comfortable and supportive pillow setting up the right environment. Whatever your opinion, it's hard to deny that the connection between dreaming and pillows should not be overlooked. After all, no matter what kind of mattress you may use, if your head isn't comfortably supported by a good pillow at night – then restful sleep and in-depth dreams will naturally suffer. So next time you're in search of better quality bed linen, don't forget to invest in some solid pillows too – they could just be the key to sweet dreamland!",
+            "subscribe.title": "Subscribe to get the latest news about us",
+            "subscribe.text": "Sign up for our newsletter & knowing about offers We never spam your inbox, so don't worry.",
+            "form.button": "Subscribe now",
+            "spollers.title": "about",
+            "spollers.link": "our story",
+            "spollers.link.1": "our impact",
+            "spollers.link.2": "FAQ",
+            "spollers.title.1": "customer recourses",
+            "spollers.link.3": "e-catalog",
+            "spollers.link.4": "request catalog",
+            "spollers.link.5": "support",
+            "spollers.title.2": "services",
+            "spollers.link.6": "delivery & shipping",
+            "spollers.link.7": "returns",
+            "spollers.link.8": "guarantee",
+            "spollers.title.3": "contacts"
+        },
+        uk: {
+            "menu.home": "Головна",
+            "menu.about": "Про нас",
+            "menu.catalog": "Каталог",
+            "menu.shop": "Магазин",
+            "menu.blog": "Блог",
+            "menu.subscribe": "Підписка",
+            "hero.title": "Сон з комфортом",
+            "hero.text": "Створіть своє ідеальне місце для сну разом з нами",
+            "hero.link": "купуй зараз",
+            "services.text.1": "здоровий сон",
+            "services.text.2": "100% бавовна",
+            "services.text.3": "Кращий пошив",
+            "services.text.4": "Комфорт",
+            "about.title": "Сонна крамниця",
+            "about.text": "Sleepy — ідеальне місце для тих, хто мріє про оновлення своєї спальні. У нашому магазині ви знайдете великий вибір постільної білизни: простирадла, підковдри, ковдри та наволочки на будь-який смак. Різноманіття кольорів, візерунків і текстур допоможе створити затишну та стильну атмосферу у вашій оселі. Ми обираємо тільки найкращі матеріали, які забезпечують максимальний комфорт і довговічність. З Sleepy ваша спальня стане справжнім оазисом відпочинку!",
+            "about.more": "читати далі",
+            "catalog.title": "Наш каталог",
+            "content.catalog.title": "наші подушки",
+            "content.catalog.text": "Наші подушки — втілення комфорту та якості, визнані безліччю задоволених клієнтів. Створені з ніжних волокон бамбука та преміального гусиного пуху, вони допомагають легко і швидко зануритися у глибокий сон. Завдяки інноваційним технологіям подушки ідеально повторюють контури вашого тіла, забезпечуючи ідеальну підтримку та правильне положення хребта протягом всієї ночі. Відомі своєю повітропроникністю, прохолодою та довговічністю, ці сучасні подушки — ідеальний фінал кожного дня.",
+            "footer.catalog.title": "Подушка готельного класу",
+            "save.title": " заощаджуйте до 70% знижки",
+            "save.text": " Наші подушки — це ідеальний спосіб покращити якість вашого сну, а тепер є ще більший стимул для оновлення завдяки пропозиції зі знижкою 70%! Пориньте в комфорт з преміальною подушкою, яка є м'якою, підтримуючою та достатньо міцною, щоб служити вам багато років.",
+            "save.link": "купити зараз",
+            "blog.title": "Наш блог",
+            "blog.headline": "переваги відмінної подушки",
+            "blog.text": "Давнє припущення про вплив сну на якісній подушці та те, як це може впливати на ваші сновидіння, не залишає байдужими багатьох. Дехто вважає, що коли ви спите на хороших подушках, це дозволяє енергії сновидінь вільно циркулювати, забезпечуючи більш чіткі та яскраві сни. Інші ж вважають, що хороший нічний сон просто неможливий без зручної та підтримуючої подушки, яка створює правильну атмосферу для відпочинку. Як би ви не ставилися до цього, важко заперечити, що зв'язок між сновидіннями та подушками не можна ігнорувати. Адже, незважаючи на те, який матрас ви використовуєте, якщо ваша голова не отримує комфортної підтримки від хорошого валика вночі — ваш сон і глибокі сновидіння природно страждатимуть. Тому наступного разу, шукаючи постільну білизну високої якості, не забудьте інвестувати і в хороші подушки — вони можуть стати ключем до солодких сновидінь!",
+            "subscribe.title": "Підпишіться на останні новини про нас",
+            "subscribe.text": " Підпишіться на нашу розсилку та будьте в курсі наших пропозицій Ми ніколи не надсилаємо спам, тому не хвилюйтеся.",
+            "form.button": "Підписатись зараз",
+            "spollers.title": "Про нас",
+            "spollers.link": "наша історія",
+            "spollers.link.1": "наш вплив",
+            "spollers.link.2": "Часті питання",
+            "spollers.title.1": "ресурси замовника",
+            "spollers.link.3": "електронний каталог",
+            "spollers.link.4": "каталог заявок",
+            "spollers.link.5": "підтримка",
+            "spollers.title.2": "послуги",
+            "spollers.link.6": "доставка та відвантаження",
+            "spollers.link.7": "повернення",
+            "spollers.link.8": "гарантія",
+            "spollers.title.3": "контакти"
+        }
+    };
+    function setLanguage(lang) {
+        const elements = document.querySelectorAll("[data-i18n]");
+        elements.forEach((el => {
+            const key = el.dataset.i18n;
+            if (translations[lang] && translations[lang][key]) el.textContent = translations[lang][key];
+        }));
+        localStorage.setItem("language", lang);
+    }
+    document.addEventListener("DOMContentLoaded", (() => {
+        const savedLang = localStorage.getItem("language") || "en";
+        setLanguage(savedLang);
+    }));
+    document.querySelectorAll("[data-lang]").forEach((btn => {
+        btn.addEventListener("click", (() => {
+            const lang = btn.dataset.lang;
+            setLanguage(lang);
+        }));
+    }));
     let swiperInstance;
     function initSliders() {
         if (document.querySelector(".catalog__slider")) {
