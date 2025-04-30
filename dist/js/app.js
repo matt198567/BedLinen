@@ -4212,131 +4212,253 @@
     }
     const catalogData = {
         pillows: {
-            title: "Our Pillows",
-            text: `Our pillows have made a name for themselves with regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they make sure you drift off to sleep in no time. Specially designed with advanced technology, our pillows contours perfectly to your body, giving you just the right amount of support for perfect alignment throughout the night. Held on pedestals for its breathability, coolness and durability, these state-of-the-art pillows are the perfect way to end each day.`,
+            title: {
+                en: "Our Pillows",
+                uk: "Наші подушки"
+            },
+            text: {
+                en: `Our pillows have made a name for themselves with regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they make sure you drift off to sleep in no time. Specially designed with advanced technology, our pillows contours perfectly to your body, giving you just the right amount of support for perfect alignment throughout the night. Held on pedestals for its breathability, coolness and durability, these state-of-the-art pillows are the perfect way to end each day.`,
+                uk: `Наші подушки — втілення комфорту та якості, визнані безліччю задоволених клієнтів. Створені з ніжних волокон бамбука та преміального гусиного пуху, вони допомагають легко і швидко зануритися у глибокий сон. Завдяки інноваційним технологіям подушки ідеально повторюють контури вашого тіла, забезпечуючи ідеальну підтримку та правильне положення хребта протягом всієї ночі. Відомі своєю повітропроникністю, прохолодою та довговічністю, ці сучасні подушки — ідеальний фінал кожного дня.`
+            },
             slides: [ {
-                img: "img/catalog/pillow-01.webp",
-                title: "Hotel Quality Pillow",
+                img: "img/catalog/pillow.01.webp",
+                title: {
+                    en: "Hotel Quality Pillow",
+                    uk: "Подушка готельного класу"
+                },
                 price: "125$"
             }, {
                 img: "img/catalog/pillow.02.webp",
-                title: "Hotel Quality Pillow",
-                price: "125$"
+                title: {
+                    en: "Orthopedic Bamboo Pillow",
+                    uk: "Ортопедична подушка з бамбука"
+                },
+                price: "99$"
             }, {
                 img: "img/catalog/pillow.03.webp",
-                title: "Hotel Quality Pillow",
-                price: "125$"
+                title: {
+                    en: "Luxury Goose Down Pillow",
+                    uk: "Розкішна подушка з гусячого пуху"
+                },
+                price: "145$"
             }, {
                 img: "img/catalog/pillow.04.webp",
-                title: "Hotel Quality Pillow",
+                title: {
+                    en: "Hotel Quality Pillow",
+                    uk: "Подушка готельного класу"
+                },
                 price: "125$"
             }, {
                 img: "img/catalog/pillow.05.webp",
-                title: "Hotel Quality Pillow",
+                title: {
+                    en: "Hotel Quality Pillow",
+                    uk: "Подушка готельного класу"
+                },
                 price: "125$"
             }, {
                 img: "img/catalog/pillow.06.webp",
-                title: "Hotel Quality Pillow",
+                title: {
+                    en: "Hotel Quality Pillow",
+                    uk: "Подушка готельного класу"
+                },
                 price: "125$"
             }, {
                 img: "img/catalog/pillow.07.webp",
-                title: "Hotel Quality Pillow",
+                title: {
+                    en: "Hotel Quality Pillow",
+                    uk: "Подушка готельного класу"
+                },
                 price: "125$"
             } ]
         },
         masks: {
-            title: "Our Masks",
-            text: `Our masks are made from hypoallergenic silk and tailored for optimal comfort. Perfect for travel or nighttime relaxation, they block out light effectively while being gentle on skin.`,
+            title: {
+                en: "Our Masks",
+                uk: "Наші маски"
+            },
+            text: {
+                en: `Our masks are made from hypoallergenic silk and tailored for optimal comfort. Perfect for travel or nighttime relaxation, they block out light effectively while being gentle on skin.`,
+                uk: `Наші маски виготовлені з гіпоалергенної шовкової тканини для максимального комфорту. Ідеальні для подорожей або вечірнього розслаблення — вони ефективно блокують світло й ніжні до шкіри.`
+            },
             slides: [ {
                 img: "img/catalog/mask.01.webp",
-                title: "Silk Sleep Mask",
+                title: {
+                    en: "Silk Sleep Mask",
+                    uk: "Шовкова маска для сну"
+                },
                 price: "49$"
             }, {
                 img: "img/catalog/mask.01.webp",
-                title: "Classic Sleep Mask",
-                price: "39$"
+                title: {
+                    en: "Silk Sleep Mask",
+                    uk: "Шовкова маска для сну"
+                },
+                price: "49$"
             }, {
                 img: "img/catalog/mask.01.webp",
-                title: "Classic Sleep Mask",
-                price: "39$"
+                title: {
+                    en: "Silk Sleep Mask",
+                    uk: "Шовкова маска для сну"
+                },
+                price: "49$"
             }, {
                 img: "img/catalog/mask.01.webp",
-                title: "Classic Sleep Mask",
-                price: "39$"
+                title: {
+                    en: "Silk Sleep Mask",
+                    uk: "Шовкова маска для сну"
+                },
+                price: "49$"
             }, {
                 img: "img/catalog/mask.01.webp",
-                title: "Classic Sleep Mask",
-                price: "39$"
+                title: {
+                    en: "Silk Sleep Mask",
+                    uk: "Шовкова маска для сну"
+                },
+                price: "49$"
             }, {
                 img: "img/catalog/mask.01.webp",
-                title: "Classic Sleep Mask",
-                price: "39$"
+                title: {
+                    en: "Silk Sleep Mask",
+                    uk: "Шовкова маска для сну"
+                },
+                price: "49$"
             }, {
                 img: "img/catalog/mask.01.webp",
-                title: "Classic Sleep Mask",
-                price: "39$"
+                title: {
+                    en: "Silk Sleep Mask",
+                    uk: "Шовкова маска для сну"
+                },
+                price: "49$"
             } ]
         },
         mattress: {
-            title: "Our Mattresses",
-            text: `Designed for deep sleep, our mattresses use memory foam and breathable materials to cradle your body and keep you cool throughout the night.`,
+            title: {
+                en: "Our Mattresses",
+                uk: "Наші матраци"
+            },
+            text: {
+                en: `Designed for deep sleep, our mattresses use memory foam and breathable materials to cradle your body and keep you cool throughout the night.`,
+                uk: `Розроблені для глибокого сну, наші матраци виготовлені з піноматеріалів з ефектом пам’яті та дихаючих тканин, які підтримують тіло та зберігають прохолоду впродовж ночі.`
+            },
             slides: [ {
                 img: "img/catalog/mattress.01.webp",
-                title: "Memory Foam Mattress",
+                title: {
+                    en: "Memory Foam Mattress",
+                    uk: "Матрац з ефектом пам’яті"
+                },
                 price: "599$"
             }, {
                 img: "img/catalog/mattress.01.webp",
-                title: "Memory Foam Mattress",
+                title: {
+                    en: "Memory Foam Mattress",
+                    uk: "Матрац з ефектом пам’яті"
+                },
                 price: "599$"
             }, {
                 img: "img/catalog/mattress.01.webp",
-                title: "Memory Foam Mattress",
+                title: {
+                    en: "Memory Foam Mattress",
+                    uk: "Матрац з ефектом пам’яті"
+                },
                 price: "599$"
             }, {
                 img: "img/catalog/mattress.01.webp",
-                title: "Memory Foam Mattress",
+                title: {
+                    en: "Memory Foam Mattress",
+                    uk: "Матрац з ефектом пам’яті"
+                },
                 price: "599$"
             }, {
                 img: "img/catalog/mattress.01.webp",
-                title: "Memory Foam Mattress",
+                title: {
+                    en: "Memory Foam Mattress",
+                    uk: "Матрац з ефектом пам’яті"
+                },
+                price: "599$"
+            }, {
+                img: "img/catalog/mattress.01.webp",
+                title: {
+                    en: "Memory Foam Mattress",
+                    uk: "Матрац з ефектом пам’яті"
+                },
                 price: "599$"
             } ]
         },
         bedding: {
-            title: "Our Bedding",
-            text: `Premium cotton bedding sets that elevate your sleeping experience with luxurious softness and durability. Make your sleep unparalleled.`,
+            title: {
+                en: "Our Bedding",
+                uk: "Наша постільна білизна"
+            },
+            text: {
+                en: `Premium cotton bedding sets that elevate your sleeping experience with luxurious softness and durability. Make your sleep unparalleled.`,
+                uk: `Преміальні комплекти постільної білизни з бавовни, які дарують розкішну м’якість і довговічність. Ваш сон буде неперевершеним.`
+            },
             slides: [ {
                 img: "img/catalog/bedding.01.webp",
-                title: "Luxury Cotton Set",
+                title: {
+                    en: "Luxury Cotton Set",
+                    uk: "Розкішний бавовняний комплект"
+                },
                 price: "199$"
             }, {
                 img: "img/catalog/bedding.01.webp",
-                title: "Luxury Cotton Set",
+                title: {
+                    en: "Luxury Cotton Set",
+                    uk: "Розкішний бавовняний комплект"
+                },
                 price: "199$"
             }, {
                 img: "img/catalog/bedding.01.webp",
-                title: "Luxury Cotton Set",
+                title: {
+                    en: "Luxury Cotton Set",
+                    uk: "Розкішний бавовняний комплект"
+                },
                 price: "199$"
             }, {
                 img: "img/catalog/bedding.01.webp",
-                title: "Luxury Cotton Set",
+                title: {
+                    en: "Luxury Cotton Set",
+                    uk: "Розкішний бавовняний комплект"
+                },
                 price: "199$"
             }, {
                 img: "img/catalog/bedding.01.webp",
-                title: "Luxury Cotton Set",
+                title: {
+                    en: "Luxury Cotton Set",
+                    uk: "Розкішний бавовняний комплект"
+                },
                 price: "199$"
             }, {
                 img: "img/catalog/bedding.01.webp",
-                title: "Luxury Cotton Set",
+                title: {
+                    en: "Luxury Cotton Set",
+                    uk: "Розкішний бавовняний комплект"
+                },
+                price: "199$"
+            }, {
+                img: "img/catalog/bedding.01.webp",
+                title: {
+                    en: "Luxury Cotton Set",
+                    uk: "Розкішний бавовняний комплект"
+                },
                 price: "199$"
             } ]
         },
         arrow: {
-            title: "Recommended Products",
-            text: `Based on your preferences, here are some top-rated products customers love. You are sure to find something you like here.`,
+            title: {
+                en: "Recommended Products",
+                uk: "Рекомендовані товари"
+            },
+            text: {
+                en: `Based on your preferences, here are some top-rated products customers love. You are sure to find something you like here.`,
+                uk: `На основі ваших вподобань ми підібрали найпопулярніші товари серед наших клієнтів. Ви обов’язково знайдете щось для себе.`
+            },
             slides: [ {
                 img: "img/catalog/pillow.06.webp",
-                title: "Best Seller Pillow",
+                title: {
+                    en: "Best Seller Pillow",
+                    uk: "Бестселер подушка"
+                },
                 price: "109$"
             } ]
         }
@@ -4435,7 +4557,7 @@
             currentActiveItem?.classList.remove("hover-by-pen");
         }));
     }));
-    const translations = {
+    const script_translations = {
         en: {
             "menu.home": "Home",
             "menu.about": "About",
@@ -4529,7 +4651,7 @@
         const elements = document.querySelectorAll("[data-i18n]");
         elements.forEach((el => {
             const key = el.dataset.i18n;
-            if (translations[lang] && translations[lang][key]) el.textContent = translations[lang][key];
+            if (script_translations[lang] && script_translations[lang][key]) el.textContent = script_translations[lang][key];
         }));
         localStorage.setItem("language", lang);
     }
@@ -4586,21 +4708,21 @@
     }
     const catalogContent = document.querySelector(".catalog__content");
     function renderCatalog(categoryKey) {
+        const lang = localStorage.getItem("language") || "en";
         const data = catalogData[categoryKey];
         if (!data) return;
         catalogContent.classList.add("is-hidden");
         setTimeout((() => {
             const titleEl = document.getElementById("catalog-title");
             const textEl = document.getElementById("catalog-text");
-            titleEl.textContent = data.title;
-            textEl.innerHTML = `<p>${data.text}</p>`;
+            titleEl.textContent = data.title[lang];
+            textEl.innerHTML = `<p>${data.text[lang]}</p>`;
             const swiperWrapper = document.querySelector(".catalog__wrapper");
             swiperWrapper.innerHTML = "";
             data.slides.forEach((slide => {
-                console.log("Image path:", slide.img);
                 const slideDiv = document.createElement("div");
                 slideDiv.classList.add("catalog__slide", "swiper-slide");
-                slideDiv.innerHTML = `\n        <div class="catalog__wrap">\n          <div class="catalog__image">\n            <img class="catalog__im ibg" src="${slide.img}" alt="${slide.title}" />\n          </div>\n          <div class="catalog__footer footer-catalog">\n            <h3 class="footer-catalog__title">${slide.title}</h3>\n            <div class="footer-catalog__inner">\n              <div class="footer-catalog__text"><p>${slide.price}</p></div>\n              <a href="" class="footer-catalog__link">\n                <div class="footer-catalog__icon">\n                  <img src="img/catalog/icons/icon.06.svg" alt="Cart icon" />\n                </div>\n              </a>\n            </div>\n          </div>\n        </div>\n      `;
+                slideDiv.innerHTML = `\n        <div class="catalog__wrap">\n          <div class="catalog__image">\n            <img class="catalog__im ibg" src="${slide.img}" alt="${slide.title[lang]}" />\n          </div>\n          <div class="catalog__footer footer-catalog">\n            <h3 class="footer-catalog__title">${slide.title[lang]}</h3>\n            <div class="footer-catalog__inner">\n              <div class="footer-catalog__text"><p>${slide.price}</p></div>\n              <a href="" class="footer-catalog__link">\n                <div class="footer-catalog__icon">\n                  <img src="img/catalog/icons/icon.06.svg" alt="Cart icon" />\n                </div>\n              </a>\n            </div>\n          </div>\n        </div>\n      `;
                 swiperWrapper.appendChild(slideDiv);
             }));
             initSliders();

@@ -862,7 +862,6 @@ body::after {
   justify-content: space-between
 }
 .footer-catalog__title {
-  line-height: 2rem;
   cursor: default
 }
 .footer-catalog__inner {
